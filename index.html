@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompTIA Security+ Interactive Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>CompTIA Security+ Quiz</h1>
+        
+        <!-- Question amount selector -->
+        <label for="question-amount">Select Number of Questions:</label>
+        <select id="question-amount">
+            <option value="20">20 Questions</option>
+            <option value="40">40 Questions</option>
+            <option value="60">60 Questions</option>
+            <option value="90">90 Questions (Exam Simulation)</option>
+        </select>
+        
+        <div id="timer" style="display:none;">
+            Time Remaining: <span id="time">90:00</span>
+        </div>
+
+        <button id="start-quiz">Start Quiz</button>
+        
+        <!-- Quiz content will be loaded here -->
+        <div id="quiz" style="display:none;"></div>
+
+        <button id="submit" style="display:none;">Submit Answers</button>
+        <div id="results"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
